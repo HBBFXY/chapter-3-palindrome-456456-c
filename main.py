@@ -1,18 +1,18 @@
-  def main():
-    # 获取用户输入
-    num_str = input("")
-    
-    # 检查输入是否为5位且全部是数字
-    if len(num_str) != 5 or not num_str.isdigit():
-        print("输入错误: 请输入5位数字")
-        return
-    
-    # 判断是否为回文数
-    if num_str == num_str[::-1]:
+# 回文数判断程序
+
+# 从键盘输入
+num = input("请输入一个5位数字：")
+
+# 1. 判断是否为纯数字
+if not num.isdigit():
+    print("错误：输入必须是纯数字")
+# 2. 判断是否为5位
+elif len(num) != 5:
+    print("错误：输入必须是一个5位数字")
+else:
+    # 3. 判断是否为回文数（字符串翻转比较）
+    if num == num[::-1]:
         print("是回文数")
     else:
         print("不是回文数")
 
-if __name__ == "__main__":
-    main()
-    main()
