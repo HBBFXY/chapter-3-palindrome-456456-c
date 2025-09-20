@@ -1,4 +1,4 @@
-   def main():
+  def main():
     # 获取用户输入
     num_str = input("")
     
@@ -14,4 +14,5 @@
         print("不是回文数")
 
 if __name__ == "__main__":
+    main()
     main()
